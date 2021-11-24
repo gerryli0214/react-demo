@@ -19,6 +19,14 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/, // 不需要处理node_modules里的内容
         use: 'babel-loader' 
+      },
+      {
+        test: /\.scss$/,
+        use: ['style-loader', 'css-loader', 'sass-loader']
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
       }
     ]
   },

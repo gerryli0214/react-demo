@@ -1,6 +1,7 @@
 import ReactDOM from 'react-dom'
 import * as React from 'react'
 import RouterView from './router/index'
+import './styles/public.scss'
 // import { Example } from './hooks'
 
 // class Clock extends React.Component {

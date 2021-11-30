@@ -4,3 +4,52 @@ html, body{
   padding: 0;
   margin: 0;
 }
+
+.header{
+  height: 64px;
+  line-height: 64px;
+  padding: 0 24px;
+  font-size: 20px;
+  background-color: aliceblue;
+}
+
+.main{
+  position: absolute;
+  top: 64px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: azure;
+}
+
+.aside{
+  box-sizing: border-box;
+  width: 200px;
+  height: 100%;
+  .menu-item{
+    display: block;
+    text-decoration: none;
+    color: #666;
+    font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 24px;
+    &:hover{
+      background-color: #fff;
+    }
+  }
+}
+
+.container{
+  margin-left: 200px;
+  height: 100%;
+  background-color: cornsilk;
+}
+
+.pull-left{
+  float: left;
+}
+
+.pull-right{
+  float: right;
+}

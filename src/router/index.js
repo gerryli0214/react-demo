@@ -1,7 +1,8 @@
 import React from "react"; 
-import { HashRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom'
 import Line from '../views/canvas/line'
 import Path from '../views/canvas/path'
+import Text from '../views/canvas/text'
 import App from '../views/app'
 
 export const routes = [
@@ -14,6 +15,11 @@ export const routes = [
     path: '/line',
     name: '线段',
     componenet: <Line />
+  },
+  {
+    path: '/text',
+    name: '文本',
+    componenet: <Text />
   }
 ]
 
@@ -25,6 +31,7 @@ export default function RouterView () {
       <Routes>
         <Route path='/' element={<App />}>
           { routeList }
+          <Route path="/" element={<Navigate to="/path" />} />
         </Route>
       </Routes>
     </HashRouter>

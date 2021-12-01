@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, Outlet } from 'react-router-dom'
+import { NavLink, Outlet } from 'react-router-dom'
 import { routes } from '../router'
 export default class App extends React.Component {
   constructor (props) {
@@ -12,7 +12,7 @@ export default class App extends React.Component {
   getSubMenu () {
     return this.state.routes
       .filter(vv => vv.path !== '/')
-      .map(vv => <Link className='menu-item' to={vv.path} key={vv.path}>{vv.name}</Link>)
+      .map(vv => <NavLink className='menu-item' to={vv.path} key={vv.path}>{vv.name}</NavLink>)
   }
 
   render () {

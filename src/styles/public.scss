@@ -37,6 +37,10 @@ html, body{
     &:hover{
       background-color: #fff;
     }
+    &.active{
+      background-color: #fff;
+      color: chocolate;
+    }
   }
 }
 
